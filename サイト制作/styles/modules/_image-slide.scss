@@ -1,0 +1,106 @@
+img{
+  width:100%;
+  vertical-align: bottom;
+}
+
+.container{
+  margin-bottom: 500px;
+}
+
+.cover-slide{
+  position: relative;
+  overflow: hidden;
+
+  &::after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #DDDDDD;
+  }
+
+  .img-zoom{
+    opacity: 0;
+    transition: transform 0.5s;
+
+    &:hover{
+      transform: scale(1.3);
+    }
+  }
+
+  // JSにて検知された時のアニメーションをいかに記述する
+  &.inview{
+    // inview要素が付与されることで、aftre要素とimg-zoom要素にアニメーションが発生する
+    &::after{
+      animation: sk-coverslide 1.4s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+    }
+
+    .img-zoom{
+      animation: sk-showimg 1.4s;
+      opacity: 1;
+    }
+  }
+}
+
+// いかにhoverした際に付与される擬似要素を作成する
+
+.hover-darken{
+  &::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: background-color 0.3s;
+    pointer-events: none;
+  }
+
+  &:hover{
+    &::before{
+      background-color: rgba(0,0,0,0.4);
+    }
+  }
+}
+
+@keyframes sk-showimg{
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  50.1%{
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sk-coverslide{
+  0%{
+      right: 100%;
+      left: 0;
+  }
+
+  50%{
+    right: 0;
+    left: 0;
+  }
+
+  100%{
+    right: 0;
+    left: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+
+
+// タブレットの時にフレックスボックスが
+
+.travel{
+
+  
+
+  &__inner{
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 50px;
+    justify-content: space-between;
+  }
+  
+  &__texts,
+  &__img{
+    flex-basis: 47%;
+  }
+
+}
+
+.houses{
+  // フレックスボックスの指定を以下で行う
+ &__inner{
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+
+ &__item{
+  flex-basis: 50%;
+  margin-bottom: 60px;
+ }
+
+}
+
+.popular{
+
+  &__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item{
+    flex-basis: 47%;
+  }
+}
+
+.footer{
+
+  &__ul{
+    flex-direction: row;
+  }
+
+ 
+
+}

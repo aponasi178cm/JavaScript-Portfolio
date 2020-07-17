@@ -1,0 +1,49 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+
+// 以下の部分にサイドバーを作成する
+
+.side{
+  display: block;
+  position: fixed;
+  top:70%;
+  color:black;
+
+  img{
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  a{
+    color:black;
+    margin-right: 20px;
+
+    span{
+      margin-right: 5px;
+    }
+  }
+
+  &.left{
+    left:50px;
+
+    .side__inner{
+      transform: rotate(-90deg);
+      transform-origin: top left;
+    }
+  }
+
+  &.rigth{
+    right:50px;
+
+    .side__inner{
+      transform: rotate(90deg);
+      transform-origin: top right;
+    }
+  }
+}
+
+

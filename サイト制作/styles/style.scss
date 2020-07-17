@@ -1,0 +1,38 @@
+// モバイルファーストで記述しているので以下のimportはスマホ用のCSS
+
+@import 'breakpoints/base';
+@import 'modules/hero-slider';
+@import 'modules/text-animationstyle';
+@import 'modules/image-slide';
+@import 'modules/button.scss';
+@import 'modules/mobile-menu.scss';
+
+
+
+
+// スマホを横に傾けた時
+@media screen and (min-width: 480px){
+  @import 'breakpoints/480up';
+}
+
+// タブレット対応が以下
+
+@media screen and (min-width: 600px){
+  @import 'breakpoints/600up';
+}
+
+// タブレットor小さいPC
+
+@media screen and (min-width: 960px){
+  @import 'breakpoints/960up';
+}
+
+// 通常のPC
+
+@media screen and (min-width: 1280px){
+  @import 'breakpoints/1280up';
+}
+
+// レティナディスプレイで表現したもの
+
+

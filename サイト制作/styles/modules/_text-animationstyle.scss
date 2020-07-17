@@ -1,0 +1,41 @@
+
+.animate-title{
+  // position: absolute;
+  // top:50%;
+  // left:50%;
+  // transform: translate(-50%, -50%);
+
+  font-weight: 800;
+  opacity: 0;
+
+ // JSにて挙動が行われた際に付与するクラス
+  &.inview{
+    opacity: 1;
+      .char{
+        display: inline-block;
+        animation: sk-fadein 0.8s;
+        // for構文で文字1個1個に対してアニメーションを付与する
+        animation-fill-mode: both;
+
+        @for $i from 1 through 30{
+            &:nth-child(#{$i}){
+              animation-delay: $i * 0.08s;
+            }
+        }
+      }
+  }
+}
+
+@keyframes sk-fadein{
+  0%{
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,100 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+// PCサイズになった時にモバイルメニューを見えなくすることで自動的に戻す
+.menu-open{
+
+  #container{
+    .cover{
+      visibility: visible;
+      opacity: 0;
+    }
+  }
+
+  #container{
+    transform: none;
+    
+  }
+
+  .mobile-menu{
+    opacity: 0;
+  }
+
+
+}
+
+.font-sm{
+  font-size: 16px;
+}
+.font-md{
+  font-size: 19px;
+}
+.font-lr{
+  font-size: 23px;
+}
+.font-lg{
+  font-size: 36px;
+}
+
+// 以下には余白の調整を行う
+
+
+
+.mb-lg{
+  margin-bottom: 150px !important;
+}
+
+.pb-lg{
+  padding-bottom: 150px !important;
+}
+
+// いかにヘッダー部分の作成を行う
+
+.header{
+  &__nav{
+    display: block;
+  }
+
+  .mobile-menu{
+    &__btn{
+      display: none;
+    }
+  }
+}
+
+.travel{
+
+  &__inner{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  &__img{
+    height: 400px;
+  }
+
+  &__description{
+    margin-bottom: 100px;
+  }
+
+}
+
+.popular{
+  // popukarではcontainerがitemの親要素
+ 
+    // popukarではcontainerがitemの親要素
+    &__container {
+      flex-direction: row;
+  }
+
+    &__item {
+      flex-basis: 25%;
+    }
+
+    &__img{
+      height: 300px;
+    }
+}
