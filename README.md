@@ -1,6 +1,6 @@
 ## 概要
-JavaScriptで作成した動的なwebサイトです。
-こちらのURLからサイトにアクセスすることができます。
+JavaScriptで作成した動的なwebサイトです。<br>
+こちらのURLからサイトにアクセスすることができます。<br>
 http://kazunari1009.work/Travel-portfolio/
 
 ## 各ファイルの説明
