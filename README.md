@@ -5,7 +5,8 @@ http://kazunari1009.work/Travel-portfolio/
 
 ## サイト
 
-![Uploading スクリーンショット 2020-10-28 14.12.58.png…]()
+<img width="1267" alt="スクリーンショット 2020-10-28 14 23 08" src="https://user-images.githubusercontent.com/57901015/97395863-35afcf80-1929-11eb-9145-fe43df28de7a.png">
+
 
 
 
