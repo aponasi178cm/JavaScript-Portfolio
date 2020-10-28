@@ -5,8 +5,6 @@ http://kazunari1009.work/Travel-portfolio/
 
 ## サイト
 
-![Uploading スクリーンショット 2020-10-28 14.12.58.png…]()
-
 
 ## 使用言語の説明
 
